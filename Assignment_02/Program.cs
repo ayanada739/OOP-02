@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Globalization;
 
 
 namespace Assignment_02
@@ -87,6 +88,100 @@ namespace Assignment_02
     //    }
     //}
 
+    #endregion
+
+
+    //PART 03
+
+    #region  Design and implement a Class for the employees in a company.
+
+    //public enum SecurityLevel
+    //{
+    //    Guest,
+    //    Developer,
+    //    Secretary,
+    //    DBA,
+    //    SecurityOfficer
+    //}
+
+    //public struct HiringDate
+    //{
+    //    public int Day { get; set; }
+    //    public int Month { get; set; }
+    //    public int Year { get; set; }
+
+    //    public HiringDate(int day, int month, int year)
+    //    {
+    //        Day = day;
+    //        Month = month;
+    //        Year = year;
+    //    }
+
+    //    public override string ToString()
+    //    {
+    //        return $"{Day:00}/{Month:00}/{Year:0000}";
+    //    }
+    //}
+
+    //public class Employee
+    //{
+    //    public int ID { get; set; }
+    //    public string Name { get; set; }
+    //    public SecurityLevel SecurityLevel { get; set; }
+    //    public decimal Salary { get; set; }
+    //    public HiringDate HireDate { get ; set; }
+    //    private char gender;
+    //    public char Gender
+    //    {
+    //        get { return gender; }
+    //        set
+    //        {
+    //            if (value == 'M' || value == 'F')
+    //            {
+    //                gender = value;
+    //            }
+    //            else
+    //            {
+    //                throw new ArgumentException("Gender must be either 'M' or 'F'");
+    //            }
+    //        }
+    //    }
+
+    //    public Employee(int id , string name , SecurityLevel securityLevel , decimal salary , HiringDate hireDate , char gender)
+    //    {
+    //        ID = id;
+    //        Name = name;
+    //        SecurityLevel = securityLevel;
+    //        Salary = salary;
+    //        HireDate = hireDate;
+    //        Gender = gender;
+    //    }
+
+    //    public override string ToString()
+    //    {
+    //        return $"ID: {ID}, Name: {Name}, Security Level: {SecurityLevel}, Salary: {Salary.ToString("C", CultureInfo.CurrentCulture)}, Hire Date: {HireDate}, Gender: {Gender}";
+    //    }
+    //}
+
+    //class Program
+    //{
+    //    static void Main()
+    //    {
+    //        Employee[] employees = new Employee[3];
+    //        employees[0] = new Employee(1, "Alice" , SecurityLevel.DBA , 60000 , new HiringDate(12 , 5 , 2018) , 'F');
+    //        employees[1] = new Employee(2, "Bob" , SecurityLevel.Guest , 40000 , new HiringDate(23 , 8 , 2019) , 'M');
+    //        employees[2] = new Employee(3, "Charlie" , SecurityLevel.SecurityOfficer , 80000 , new HiringDate(15 , 3 , 2017) , 'M');
+
+    //        Array.Sort(employees , (e1 , e2) => (e1.HireDate.Year , e1.HireDate.Month , e1.HireDate.Day).CompareTo((e2.HireDate.Year , e2.HireDate.Month , e2.HireDate.Day)));
+
+    //        foreach (var employee in employees)
+    //        {
+    //            Console.WriteLine(employee);
+    //        }
+
+             
+    //    }
+    //}
     #endregion
 
 }
