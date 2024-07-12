@@ -10,25 +10,50 @@ namespace OOP_02.Encapsulation
     {
         #region Atributes
 
-        //public int Id;
-        //public string Name;
-        //public decimal Salary;
+        private int Id;
+        private string EmpName;
+        private decimal Salary;
         #endregion
- 
+
+        // Encapsulation Separate Data Definition [Attributes]
+        // From Its Use [Getter Setter)— [Property]
+
+        #region 1. Apply Encapsulation [Getter Setter]
+        // a. Private Att
+        //B. two funcs Getter _ Setter
+
+        //Getter 
+        public string GetName()
+        {
+            return EmpName;
+        }
+        //Setter
+        public void setName(string? value)
+        {
+            EmpName = value?.Length >5 ? value.Substring(0 , 5) : value;
+
+        }
+        #endregion
+
+        #region MyRegion
+
+        #endregion
+
+
         #region Constructors
-        //public Employee(int id, string name, decimal salary)
-        //{
-        //    Id = id;
-        //    Name = name;
-        //    Salary = salary;
-        //}
+        public Employee(int id, string name, decimal salary)
+        {
+            Id = id;
+            EmpName = name;
+            Salary = salary;
+        }
         #endregion
 
         #region Methods
-        //public override string ToString()
-        //{
-        //    return $"Id = {Id}\nName = {Name}\nSalary = {Salary:c}";
-        //} 
+        public override string ToString()
+        {
+            return $"Id = {Id}\nName = {EmpName}\nSalary = {Salary:c}";
+        }
         #endregion
 
 
